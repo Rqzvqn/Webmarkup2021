@@ -1,0 +1,894 @@
+body {
+	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 1% 1% 1% 1%;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #482ff7;
+}
+h2 {
+	font-size: 1.2em;
+	color: #2d6cdf;
+}
+p {
+	color: #000;
+	font-size: 1em;
+	padding: 2px;
+	letter-spacing: 0.05em;
+	line-height: 1.2em;
+	word-spacing: -0.2em;
+	text-indent: 1.5em;
+}
+p::first-letter {
+  font-size: 120%;
+  color: #482ff7;
+}
+table {
+	width: 95%;
+	border-collapse: collapse;
+	margin: 1% 1% 1% 1%;
+}
+td:first-child {
+	background-color: rgb(189, 253, 245);
+	text-align: left;
+}
+tr:nth-child(even) {
+	background-color: rgb(141, 227, 248);	
+}
+tr:nth-child(odd) {
+	background-color: #FFF;
+}
+th {
+	text-align: left;
+	background-color: #000;
+	color: #fff;
+}
+table, th, td {
+  border: 2px solid #80acfd;
+  padding: 4px;
+}
+footer {
+	color: #000;
+	font-size: 0.9em;
+	text-align: left;
+	margin: 7px;
+}
+a:active {
+  color: #FFF;
+}
+.index-header{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+
+/*index*/
+.index-top {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#fixmobilebar {
+	width: 50%
+}
+.index-header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 50%;
+}
+#logo {
+	display: none;
+}
+#figcaption {
+	display: none;
+}
+.nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	width:50%;
+}
+.index-flexParent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#video {
+	display: none;
+}
+#index-article1 {
+	flex-basis:100%;
+	border: 2px solid #000;
+	margin: 2px;
+	order: 4;
+}
+#index-article2 {
+	flex-basis:100%;
+	border: 2px solid #000;
+	margin: 2px;
+	order: 3;
+}
+#index-article3 {
+	flex-basis:100%;
+	border: 2px solid #000;
+	margin: 2px;
+	order: 2;
+}
+#index-aside {
+	background-color: #11a035;
+	font-size: 1em;
+	order: 1;
+	width: 100%;
+	flex-shrink:0;
+	flex-grow: 0;
+}
+#index-pic1 , #index-pic2 , #index-pic3 {
+	width:80px;
+	height: 80px;
+    margin: 0 40% 0 40%;
+}
+#index-cookie{
+    color: #fff;
+	font-size: 1em;
+	background-color: rgb(18, 148, 126);
+	opacity: 0.5;
+	position: fixed;
+    bottom:0px; right: 0px;
+	width: 33%;
+	z-index:9999;
+}
+
+/*howsolarowrks*/
+
+#howsolarworks-section-grid-container {
+	border: 1px solid #ddd;
+	display: grid;
+	grid-template-rows: auto auto auto auto;		
+}
+#howsolarworks-article1 {
+	border: 1px solid #000;
+	margin: 3px;
+	grid-row: 4;
+}
+#howsolarworks-article2 {
+	border: 1px solid #000;
+	margin: 3px;
+	grid-row: 3;
+}
+#howsolarworks-article3 {
+	border: 1px solid #000;
+	margin: 3px;
+	grid-row: 2;
+}
+#howsolarworks-article4 {
+	display: none;
+}
+#howsolarworks-article5 {
+	border: 1px solid #000;
+	margin: 3px;
+	grid-row: 1;
+}
+#howsolarworks-article6 {
+	display: none;
+}
+#howsolaerworks-aside-grid-container {
+	border: 3px solid #000;
+	display: grid;
+	grid-template-columns: 80px;
+	justify-content: center;
+}
+#howsolarworks-pic1 , #howsolarworks-pic2 , #howsolarworks-pic3 {
+	grid-column: 1 / 2;
+	width: 80px;
+	height: 80px;
+}
+#howsolarworks-cookie{
+    color: #fff;
+    font-size: 1em;
+	background-color: rgb(238, 120, 150);
+	opacity: 0.5;
+	position: fixed;
+    bottom:0px; right: 0px;
+	width: 50%;
+	z-index:9999;
+}
+
+/*eusolar*/
+#eusolar-section-grid-container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;			
+}
+#eusolar-article{
+display: none;
+}
+#eusolar-table{
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+}
+td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+    display: none;
+}
+th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6) {
+	display: none;
+}
+#eusolar-aside-grid-container {
+	border: 2px solid #000;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	justify-content: center;
+}
+#eusolar-pic1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	width:80px;
+	height: 80px;
+}
+#eusolar-pic2 {	
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	width:80px;
+	height: 80px;
+}
+#eusolar-pic3 {
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+	width:80px;
+	height: 80px;
+	}
+#eusolar-cookie{
+    color: #fff;
+	font-size: 1em;
+	background-color: rgb(34, 179, 89);
+	opacity: 0.5;
+	position: fixed;
+    bottom:0px; right: 0px;
+	width: 50%;
+	z-index:9999;
+}
+
+/*contact*/
+
+#contact-details {
+	font-family: 'Notable';
+	font-size: 0.8em;
+	text-align: center;
+	margin: 5px;
+}
+form {
+	width: 100%;
+	font-size: 1em;
+}
+input {
+	width:50%;
+}
+.contact-flexParent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#contact-form {
+	flex-basis:100%;
+}
+.contact-aside {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	width:100%;
+}
+#contact-pic1 , #contact-pic2 , #contact-pic3 {
+	width: 80px;
+	height: 80px;
+}
+#contact-cookie{
+    color: #fff;
+	font-size: 1em;
+	background-color: rgb(34, 23, 1);
+	opacity: 0.5;
+	position: fixed;
+    bottom: 0; right: 0;
+	width: 50%;
+	z-index:9999;
+}
+}
+
+@media (min-width: 481px) and (max-width: 1179px){
+
+/*index*/
+.index-header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#logo {
+	width: 60px;
+	height: 60px;
+}
+.nav {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.index-flexParent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+video {
+	width: 300px;
+	height: 200px;
+	order:2;
+	margin: auto auto auto auto;
+
+}
+#index-article1 {
+	flex-basis:100%;
+	border: 2px solid #000;
+	margin: 2px;
+	order: 5;
+}
+#index-article2 {
+	flex-basis:100%;
+	border: 2px solid #000;
+	margin: 2px;
+	order: 4;
+}
+#index-article3 {
+	flex-basis:100%;
+	border: 2px solid #000;
+	margin: 2px;
+	order: 3;
+}
+#index-aside {
+	background-color: #6183f5;
+	font-size: 1em;
+	order: 1;
+	width: 100%;
+	height: 100%;
+	flex-shrink:0;
+	flex-grow: 0;
+}
+#index-pic1 , #index-pic2 , #index-pic3 {
+	width:120px;
+	height: 120px;
+	float: left;
+	margin: 15px;
+}
+#index-cookie{
+    color: #fff;
+	font-size: 1.2em;
+	background-color: rgb(250, 169, 115);
+	opacity: 0.5;
+	position: fixed;
+    bottom:0px; right: 0px;
+	width: 33%;
+	z-index:9999;
+}
+
+/*howsolarowrks*/
+#howsolarworks-section-grid-container {
+	border: 5px solid black;
+	padding: 10px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto auto auto auto auto;		
+}
+#howsolarworks-article1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+#howsolarworks-article2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 4;
+}
+#howsolarworks-article3 {
+	grid-column: 1 / 2;
+	grid-row: 3 / 7;
+}
+#howsolarworks-article4 {
+	display: none;
+}
+#howsolarworks-article5 {
+	grid-column: 2 / 3;
+	grid-row: 4 / 7;
+}
+#howsolarworks-article6 {
+	grid-column: 1 / 3;
+	grid-row: 7 / 9;
+}
+#howsolaerworks-aside-grid-container {
+	border: 5px solid #000;
+	padding: 10px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: auto auto;
+	justify-content: space-around;
+}
+#howsolarworks-pic1 {
+	grid-column: 1 / 2;
+	width:120px;
+	height: 120px;
+}
+#howsolarworks-pic2 {
+	
+	grid-column: 2 / 3;
+	width:120px;
+	height: 120px;
+}
+#howsolarworks-pic3 {
+	display: none;
+}
+#howsolarworks-cookie{
+	color: #fff;
+	font-size: 1.2em;
+	background-color: rgb(17, 179, 2);
+	opacity: 0.5;
+	position: fixed;
+    bottom:0px; right: 0px;
+	width: 50%;
+	z-index:9999;
+}
+
+/*eusolar*/
+#eusolar-section-grid-container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;			
+}
+#eusolar-article{
+	grid-column: 1 / span1;
+	grid-row: 1 / span 1;
+}
+#eusolar-table{
+	width: 1000px;
+	grid-column: 1 / span 1;
+	grid-row: 2 / span 1;
+}
+td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+    display: none;
+}
+th:nth-child(2), th:nth-child(3), th:nth-child(4) {
+	display: none;
+}
+#eusolar-aside-grid-container {
+	border: 2px solid #000;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+#eusolar-pic1 {
+	display:none;
+}
+#eusolar-pic2 {
+	grid-column: 1 / span 1;
+	width:120px;
+	height: 120px;
+}
+#eusolar-pic3 {
+	grid-column: 2 / span 1;
+	width:120px;
+	height: 120px;
+	}
+#eusolar-cookie{
+    color: #fff;
+	font-size: 1.2em;
+	background-color: rgb(236, 196, 116);
+	opacity: 0.5;
+	position: fixed;
+    bottom:0px; right: 0px;
+	width: 50%;
+	z-index:9999;
+}
+
+/*contact*/
+#contact-details {
+	font-family: 'Notable';
+	font-size: 1.2em;
+	text-align: center;
+	margin: 20px;
+}
+form {
+	width: 50%;
+}
+input {
+	width:55%;
+}
+.contact-flexParent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#contact-form {
+	flex-basis:50%;
+}
+#contact-aside {
+	flex-basis:50%;
+}
+.contact-aside {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;	
+}
+#contact-pic1 , #contact-pic2 , #contact-pic3 {
+	width: 120px;
+	height: 120px;
+}
+#contact-cookie{
+    color: #fff;
+	font-size: 1.2em;
+	background-color: rgb(141, 110, 226);
+	opacity: 0.5;
+	position: fixed;
+    bottom: 0; right: 0;
+	width: 50%;
+	z-index:9999;
+}
+}
+
+@media screen and (min-width: 1280px) {
+
+/*index*/
+.index-header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#logo {
+	width:60px;
+	height: 60px;
+}
+.nav {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;	
+}
+.index-flexParent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-collapse: collapse;
+}
+#video {
+	width: 600px;
+	height: 400px;
+	order:1;
+	margin: auto auto auto auto;
+}
+#index-article1 {
+	flex-basis:67%;
+	border: 2px solid #000;
+	margin: 2px;
+	order: 2;
+}
+#index-article2 {
+	flex-basis:67%;
+	border: 2px solid #000;
+	margin: 2px;
+	order: 3;
+}
+#index-article3 {
+	flex-basis:67%;
+	border: 2px solid #000;
+	margin: 2px;
+	order: 4;
+}
+#index-aside {
+	background-color: #e9b4f0;
+	font-size: 1em;
+	order: 2;
+	width: 31%;
+	flex-shrink:0;
+	flex-grow: 0;
+	border: 2px solid #ddd;
+	margin: 2px;
+}
+#index-pic1 , #index-pic2 , #index-pic3 {
+	width:180px;
+	height: 180px;
+	float: right;
+}
+#index-cookie{
+    color: #fff;
+	font-size: 2em;
+	background-color: rgb(138, 16, 62);
+	opacity: 0.5;
+	position: fixed;
+    bottom: 0; right: 0;
+	width: 33%;
+	z-index:9999;
+}
+
+/*howsolarowrks*/
+#howsolarworks-section-grid-container {
+	border: 5px solid #000;
+	padding: 10px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto auto auto auto auto;		
+}
+#howsolarworks-article1 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 7;
+}
+#howsolarworks-article2 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+#howsolarworks-article3 {
+	grid-column: 3 / 3;
+	grid-row: 1 / 4;
+}
+#howsolarworks-article4 {
+	grid-column: 3 / 3;
+	grid-row: 4 / 7;
+}
+#howsolarworks-article5 {
+	grid-column: 1 / 1;
+	grid-row: 3 / 8;
+}
+#howsolarworks-article6 {
+	grid-column: 2 / 4;
+	grid-row: 7 / 7;
+}
+#howsolaerworks-aside-grid-container {
+	border: 5px solid #000;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: space-between;
+}
+#howsolarworks-pic1 {
+	grid-column: 1 / span 1;
+	width:240px;
+	height: 240px;
+}
+#howsolarworks-pic2 {
+	
+	grid-column: 2 / span 1;
+	width:240px;
+	height: 240px;
+}
+#howsolarworks-pic3 {
+	grid-column: 3 / span 1;
+	width:240px;
+	height: 240px;
+}
+#howsolarworks-cookie{
+    color: #fff;
+	font-size: 2em;
+	background-color: rgb(87, 7, 24);
+	opacity: 0.5;
+	position: fixed;
+    bottom:0px; right: 0px;
+	width: 33%;
+	z-index:9999;
+}
+
+/*eusolar*/
+#eusolar-section-grid-container {
+	display: grid;
+	border-color: #482ff7;
+	border-style: double;
+	border-width: 8px;
+	padding: 1%;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	justify-content: space-between;	
+}
+#eusolar-article{
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+}
+#eusolar-table{
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
+}
+td:nth-child(2) {
+  display: none;
+}
+th:nth-child(2) {
+  display: none;
+}
+#eusolar-aside-grid-container {
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: auto;
+	justify-content: space-between;
+}
+#eusolar-pic1 {
+	width:240px;
+	height: 240px;
+}
+#eusolar-pic2 {	
+	width:240px;
+	height: 240px;
+}
+#eusolar-pic3 {
+	width:240px;
+	height: 240px;
+}
+#eusolar-cookie{
+    color: #fff;
+	font-size: 2em;
+	background-color: rgb(88, 9, 9);
+	opacity: 0.5;
+	position: fixed;
+    bottom: 0; right: 0;
+	width: 33%;
+	z-index:9999;
+}
+
+/*contact*/
+#contact-details {
+	font-family: 'Notable';
+	font-size: 1.5em;
+	text-align: center;
+	margin: 20px;
+}
+input {
+	width:60%;
+}
+.contact-flexParent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#contact-form {
+	flex-basis:67%;
+	order: 1;
+	font-size: 1.3em;
+}
+#contact-aside {
+	flex-basis:32%;
+	order: 2;
+}
+.contact-aside {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;		
+}
+#contact-pic1 , #contact-pic2 , #contact-pic3 {
+	width: 240px;
+	height: 240px;
+}
+#contact-cookie{
+    color: #fff;
+	font-size: 2em;
+	background-color: rgb(68, 5, 35);
+	opacity: 0.5;
+	position: fixed;
+    bottom: 0; right: 0;
+	width: 33%;
+	z-index:9999;
+}
+}
+
+/*hambuerger nav menu*/ 
+  .nav li {
+    float: left;
+  }
+  .nav li a {
+    padding: 20px 30px;
+  }
+  .nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .nav .menu-icon {
+    display: none;
+  } 
+.nav {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: static;
+  width: 100%;
+  z-index: 3;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #8df7c5;
+}
+.nav li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #ddd;
+  text-decoration: none;
+}
+.nav li a:hover,
+.nav .menu-btn:hover {
+  background-color: #ddd;
+}
+/* menu */
+.nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+/* menu icon */
+.nav .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+.nav .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+.nav .menu-icon .navicon:before,
+.nav .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.nav .menu-icon .navicon:before {
+  top: 5px;
+}
+.nav .menu-icon .navicon:after {
+  top: -5px;
+}
+/* menu btn */
+.nav .menu-btn {
+  display: none;
+}
+.nav .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 480px) {
+  .nav li {
+    float: left;
+  }
+  .nav li a {
+    padding: 20px 30px;
+  }
+  .nav  .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .nav .menu-icon {
+    display: none;
+  }
+}
